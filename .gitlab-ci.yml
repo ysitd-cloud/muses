@@ -1,14 +1,15 @@
-image: node:8
+image: node:8.11.3
 
 pages:
   cache:
     paths:
-      - node_modules
+    - node_modules/
+
   script:
-    - yarn
-    - yarn run pages
+  - yarn install
+  - yarn run pages
   artifacts:
     paths:
-      - dist
+    - dist
   only:
-    - master
+  - master

@@ -3,7 +3,7 @@ import color from '../../mixins/bg';
 const staticClasses = ['toolbar'];
 
 export default {
-  name: 'Toolbar',
+  name: 'YCloudToolbar',
   mixins: [color],
   computed: {
     classes() {

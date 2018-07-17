@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue';
-import Toolbar from '../src/components/toolbar/Toolbar.vue';
+import Toolbar from '../../src/components/toolbar/Toolbar.vue';
 
 storiesOf('Components/Toolbar', module)
   .add('color=primary', () => ({

@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue';
-import YCloudCard from '../src/components/card/Card.vue';
+import YCloudCard from '../../src/components/card/Card.vue';
 
 storiesOf('Components/Card', module)
   .add('basic', () => ({

@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue';
-import YCloudButton from '../src/components/button/Button.vue';
+import YCloudButton from '../../src/components/button/Button.vue';
 
 storiesOf('Components/Button', module)
   .add('basic', () => ({

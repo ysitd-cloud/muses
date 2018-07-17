@@ -16,8 +16,6 @@
     "lint": "eslint --ext js,vue ."
   },
   "devDependencies": {
-    "@storybook/addon-backgrounds": "^3.4.8",
-    "@storybook/addon-notes": "^3.4.8",
     "@storybook/addon-viewport": "^3.4.8",
     "@storybook/addons": "^3.3.0",
     "@storybook/cli": "^3.4.8",

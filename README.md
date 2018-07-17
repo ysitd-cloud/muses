@@ -21,4 +21,4 @@ A storybook instance would be start and listen at [http://localhost:9001](http:/
 yarn pages
 ```
 
-Static files generate in `dist` directory 
+Static files generate in `pages` directory 

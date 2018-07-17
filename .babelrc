@@ -1,8 +1,10 @@
 {
-  "presets": [["env", {
-    "target": {
-      "browser": ["last 5 Chrome versions", "last 5 Firefox versions"]
-    }
-  }]],
+  "presets": [
+    ["env", {
+      "target": {
+        "browser": ["last 5 Chrome versions", "last 5 Firefox versions"]
+      }
+    }]
+  ],
   "plugins": ["syntax-dynamic-import"]
 }

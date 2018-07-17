@@ -12,10 +12,11 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "pages": "build-storybook -c .storybook -o dist",
+    "pages": "build-storybook -c .storybook -o pages",
     "lint": "eslint --ext js,vue ."
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.8",
     "@storybook/addon-viewport": "^3.4.8",
     "@storybook/addons": "^3.3.0",
     "@storybook/cli": "^3.4.8",

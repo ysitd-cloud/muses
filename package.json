@@ -1,9 +1,11 @@
 {
-  "name": "muses",
+  "name": "@ysitd-cloud/muses",
   "version": "1.0.0",
   "description": "YSITD Cloud Frontend UI",
   "repository": "git+https://gitlab.com/ysitd-cloud/muses.git",
-  "author": "Tony Yip",
+  "contributors": [
+     {"name": "Tony Yip", "email": "tony@tonyhhyip.me"}
+  ],
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",

@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import YCloudButton from '../src/components/button/Button.vue';
 
-storiesOf('Button', module)
+storiesOf('Components/Button', module)
   .add('basic', () => ({
     components: { YCloudButton },
     template: '<div style="margin: 5px"><y-cloud-button>Testing</y-cloud-button></div>',

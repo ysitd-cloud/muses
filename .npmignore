@@ -1,4 +1,4 @@
-dist
+/pages
 stories
 .DS_Store
 .storybook

@@ -9,8 +9,8 @@
       <input id="password" type="password" name="password" v-model="password">
     </div>
     <div>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+      <y-cloud-button type="submit">Submit</y-cloud-button>
+      <y-cloud-button color="secondary" type="reset">Reset</y-cloud-button>
     </div>
   </form>
 </template>
@@ -19,11 +19,17 @@
   form {
     margin: 5px;
   }
+  div {
+    margin: 5px 0;
+  }
 </style>
 
 <script>
 export default {
   name: 'AuthLoginPage',
+  components: {
+    YCloudButton: () => import('../../components/button/Button.vue'),
+  },
   data() {
     return {
       username: '',

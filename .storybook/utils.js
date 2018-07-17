@@ -1,3 +1,5 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 exports.cssLoaders = function (opts) {
   const options = opts || {};
 
@@ -18,6 +20,13 @@ exports.cssLoaders = function (opts) {
         options: Object.assign({}, loaderOptions, {
           sourceMap: options.sourceMap,
         }),
+      });
+    }
+
+    if (options.extract) {
+      return ExtractTextPlugin.extract({
+        use: loaders,
+        fallback: 'vue-style-loader',
       });
     }
 

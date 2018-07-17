@@ -6,7 +6,15 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const vueConf = require('../.storybook/vue-loader.conf');
 const { styleLoaders } = require('../.storybook/utils');
 
-const baseConfig = {
+const files = glob.sync('./src/entries/**/*.js');
+const entry = {};
+files.forEach((file) => {
+  const key = file.replace('./src/entries/', '').replace(/\.js$/, '');
+  entry[key] = file;
+});
+
+module.exports = {
+  entry,
   output: {
     filename: '[name].js',
     path: `${__dirname}/../dist`,
@@ -40,6 +48,12 @@ const baseConfig = {
       name: 'manifest',
       chunks: ['vendor'],
     }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+      sourceMap: true,
+    }),
   ],
   module: {
     rules: [
@@ -63,13 +77,3 @@ const baseConfig = {
     })),
   },
 };
-
-const files = glob.sync('./src/entries/**/*.js');
-module.exports = files.map((file) => {
-  const key = file.replace('./src/entries/', '').replace(/\.js$/, '');
-  return Object.assign({
-    entry: {
-      [key]: file,
-    },
-  }, baseConfig);
-});

@@ -1,3 +1,4 @@
+import '../../stylus/base.styl';
 import Vue from 'vue';
 import LoginPage from '../../pages/auth/Login.vue';
 
